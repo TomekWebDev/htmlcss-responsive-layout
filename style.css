@@ -1,0 +1,46 @@
+header{
+    background-color: blue;
+    color: white;
+}
+
+section{
+    margin: 8% 0;
+}
+
+.main-blue-card{
+    background-color: lightskyblue;
+    width: 80%;
+    margin: auto;
+    padding: 5% 8% 0 5%;
+    margin-bottom: 5%;
+}
+
+.info-btn-container *{
+    margin: 5% 0;
+}
+
+.app-store-btn{
+    display: block;
+}
+
+.main-blue-card img{
+    width: 60%;
+    margin: 0 20%;
+    vertical-align: bottom;
+}
+
+.blue-card{
+    padding: 5%;
+    padding-top: 5%;
+    background-color: lightskyblue;
+    color: blue;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.blue-card *{
+    margin: 5% 0;
+}
+
