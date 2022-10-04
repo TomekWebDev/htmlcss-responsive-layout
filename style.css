@@ -8,6 +8,14 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+section{
+    padding: 5rem 0;
+}
+
+/******************************************
+header styling
+*******************************************/
+
 header{
     background-color: blue;
     color: white;
@@ -30,9 +38,9 @@ header{
     display: none;
 }
 
-section{
-    margin: 2rem 0;
-}
+/******************************************
+section 1 mobile
+*******************************************/
 
 .main-blue-card{
     background-color: lightskyblue;
@@ -42,6 +50,7 @@ section{
     margin-bottom: 1.5rem;
     font-weight: 700;
     color: rgb(108, 108, 108);
+    border-radius: 1rem;
 }
 
 .main-blue-card h2{
@@ -71,6 +80,7 @@ section{
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: 700;
+    border-radius: 1rem;
 }
 
 .blue-card p{
@@ -88,13 +98,146 @@ section{
 
 
 .strategic-planning-section{
-    background-color: violet;
+    background-color: #9593e6;
+    color: white;
+    padding: 5rem 0;
+}
+
+.strategic-planning-section h2{
+    margin-bottom: 3rem;
+}
+
+.strategic-plan-img1-container p{
+    margin-bottom: 3rem;
+}
+
+.strategic-planning-container{
+    width: 80%;
+    margin: auto;
+}
+
+.strategic-plan-img1-container img{
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 5rem;
+}
+
+.strategic-plan-white-container{
+    background-color: white;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.strategic-plan-white-container img{
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+}
+
+.strategic-plan-white-container p{
+    font-style: italic;
+    margin: 1rem 0 2rem 0;
+    font-weight: 600;
+}
+
+/******************************************
+section 3 mobile
+*******************************************/
+
+.testimonials-container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.testimonials-container > *{
+    margin-bottom: 1.5rem;
+}
+
+.testimonials-container h2{
+    color: #9593e6;
+}
+
+.testimonial-card{
+    background-color: #9593e6;
+    color: white;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 3rem;
+}
+
+.testimonial-feedback{
+    margin: 1.5rem 0;
+}
+
+.img-rounder{
+    height: 0;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.testimonial-1{
+    background-image: url(img/testimonial1.jpg);
+}
+
+.testimonial-2{
+    background-image: url(img/testimonial2.jpg);
+}
+
+.testimonial-3{
+    background-image: url(img/testimonial3.jpg);
+}
+
+.testimonial-name{
+    font-weight: 700;
+}
+
+/******************************************
+section 4 mobile
+*******************************************/
+
+.benefits-section{
+    background-color: #9593e6;
+}
+
+.benefits-section h2{
+    margin-bottom: 1.5rem;
+}
+
+.benefits-container{
+    width: 80%;
+    margin: auto;
+}
+
+.benefit-card{
+    background-color: white;
+    color: #9593e6;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.benefit-number{
+    font-size: 4rem;
 }
 
 
-
+/******************************************
+ipad query
+*******************************************/
 
 @media screen and (min-width: 480px) {
+
+/******************************************
+section 1 ipad
+*******************************************/
 
     .nav-container{
         width: 93%;
@@ -131,10 +274,66 @@ section{
         vertical-align: bottom;
     }
 
+/******************************************
+section 3 ipad
+*******************************************/
+
+    .testimonial-card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 1rem;
+    }
+
+    .img-rounder{
+        width: 30%;
+        margin: 0;
+        padding-bottom: 30%;
+    }
+
+    .testimonial-info-container{
+        width: 65%;
+        text-align: left;
+    }
+
+    .testimonial-feedback{
+        margin-top: 0;
+    }
+
+/******************************************
+section 4 ipad
+*******************************************/
+
+    .benefits-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .benefits-container h2{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 5rem;
+        color: white;
+    }
+
+    .benefit-card{
+        width: 45%;
+    }
+
 }
 
+/******************************************
+desktop query
+*******************************************/
 
 @media screen and (min-width: 679px) {
+
+/******************************************
+section 1 desktop
+*******************************************/
 
     .nav-container{
         width: 80%;
@@ -174,6 +373,65 @@ section{
     .main-blue-card img{
         width: 90%;
         margin-left: 1.5rem;
+    }
+
+/******************************************
+section 2 desktop
+*******************************************/
+
+    .strategic-planning-section{
+        padding: 5rem 0;
+    }
+
+    .strategic-planning-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 70%;
+    }
+
+    .strategic-plan-img1-container{
+        width: 48%;
+    }
+
+    .strategic-plan-img1-container img{
+        width: 90%;
+        margin: 0 5%;
+        margin-bottom: 8rem;
+    }
+
+    .strategic-plan-img1-container p{
+        margin: 0;
+    }
+
+    .strategic-plan-white-container{
+        width: 44%;
+    }
+
+    .strategic-plan-white-container img{
+        width: 80%;
+    }
+
+/******************************************
+section 3 desktop
+*******************************************/
+
+    .img-rounder{
+        width: 20%;
+        padding-bottom: 20%;
+    }
+
+    .testimonial-info-container{
+        width: 76%;
+        text-align: left;
+    }
+
+/******************************************
+section 4 desktop
+*******************************************/
+
+    .benefit-card{
+        width: calc(90% / 3);
     }
 
 
