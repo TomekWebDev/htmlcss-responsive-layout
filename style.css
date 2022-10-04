@@ -1,3 +1,9 @@
+/******************************************
+
+UTILITY
+
+*******************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 
 ul{
@@ -13,7 +19,14 @@ section{
 }
 
 /******************************************
-header styling
+
+MOBILE FIRST
+
+*******************************************/
+/******************************************
+
+header - mobile
+
 *******************************************/
 
 header{
@@ -39,7 +52,9 @@ header{
 }
 
 /******************************************
-section 1 mobile
+
+section 1 - blue cards - mobile
+
 *******************************************/
 
 .main-blue-card{
@@ -95,7 +110,16 @@ section 1 mobile
     font-size: 4rem;
 }
 
+/******************************************
 
+section 2 - strategic planning - mobile
+
+*******************************************/
+
+.strategic-planning-container{
+    width: 80%;
+    margin: auto;
+}
 
 .strategic-planning-section{
     background-color: #9593e6;
@@ -109,11 +133,6 @@ section 1 mobile
 
 .strategic-plan-img1-container p{
     margin-bottom: 3rem;
-}
-
-.strategic-planning-container{
-    width: 80%;
-    margin: auto;
 }
 
 .strategic-plan-img1-container img{
@@ -143,7 +162,9 @@ section 1 mobile
 }
 
 /******************************************
-section 3 mobile
+
+section 3 - testimonials - mobile
+
 *******************************************/
 
 .testimonials-container{
@@ -200,20 +221,22 @@ section 3 mobile
 }
 
 /******************************************
-section 4 mobile
+
+section 4 - benefits - mobile
+
 *******************************************/
 
 .benefits-section{
     background-color: #9593e6;
 }
 
-.benefits-section h2{
-    margin-bottom: 1.5rem;
-}
-
 .benefits-container{
     width: 80%;
     margin: auto;
+}
+
+.benefits-section h2{
+    margin-bottom: 1.5rem;
 }
 
 .benefit-card{
@@ -228,20 +251,151 @@ section 4 mobile
     font-size: 4rem;
 }
 
+/******************************************
+
+section 5 - about us - mobile
+
+*******************************************/
+
+.about-us-container{
+    width: 80%;
+    margin: auto;
+}
+
+.title-paragraph-container{
+    margin-bottom: 3rem;
+}
+
+.title-paragraph-container *{
+    margin-bottom: 1.5rem;
+}
+
+.title-paragraph-container h2{
+    color: #9593e6;
+}
+
+.figure-linkedin-container *{
+    margin-bottom: 1.5rem;
+}
+
+.figure-linkedin-container h3{
+    margin-top: 1.5rem;
+    color: #9593e6;
+}
+
+.figure-linkedin-container button{
+    margin: 0;
+}
+
+.about-us-figure{
+    background-image: url(img/about.jpg);
+    margin: 0;
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.quotation{
+    position: absolute;
+    right: -28%;
+    top: -28%;
+    font-size: 5rem;
+    color: #9593e6;
+}
 
 /******************************************
-ipad query
+
+section 6 - get started - mobile
+
+*******************************************/
+
+    .get-started-section{
+        background-color: #9593e6;
+    }
+
+    .get-started-container{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .get-started-container > *{
+        margin-bottom: 1.5rem;
+        color: white;
+    }
+
+    .golden-highlight{
+        margin: 3rem 0;
+        font-size: 4rem;
+        font-weight: 700;
+        color: gold;
+    }
+
+    .get-started-container ul{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        font-size: 0.8rem
+    }
+
+    .copyright-list li{
+        margin: 0 0.2rem;
+    }
+
+    .underlined{
+        text-decoration: underline;
+    }
+
+/******************************************
+
+footer - mobile
+
+*******************************************/    
+
+    footer{
+        background-color: rgb(31, 40, 40);
+        color: white;
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    .footer-container{
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer-container :first-child{
+        margin-bottom: 1.5rem;
+    }
+
+    .purple{
+        color: #9593e6;
+    }
+
+/******************************************
+
+IPAD QUERY
+
 *******************************************/
 
 @media screen and (min-width: 480px) {
 
 /******************************************
-section 1 ipad
+
+header ipad
+
 *******************************************/
 
     .nav-container{
         width: 93%;
     }
+
+/******************************************
+
+section 1 - blue cards - ipad
+
+*******************************************/
 
     .blue-cards-container{
         width: 93%;
@@ -275,9 +429,25 @@ section 1 ipad
     }
 
 /******************************************
-section 3 ipad
+
+section 2 - strategic planning - ipad
+
 *******************************************/
 
+    .strategic-planning-container{
+        width: 93%;
+    }
+
+/******************************************
+
+section 3 - testimonials - ipad
+
+*******************************************/
+
+    .testimonials-container{
+        width: 93%;
+    }
+    
     .testimonial-card{
         display: flex;
         align-items: center;
@@ -301,13 +471,15 @@ section 3 ipad
     }
 
 /******************************************
-section 4 ipad
+
+section 4 - benefits - ipad
+
 *******************************************/
 
     .benefits-container{
-        width: 100%;
+        width: 93%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
@@ -315,24 +487,71 @@ section 4 ipad
         width: 80%;
         margin: auto;
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
         color: white;
     }
 
     .benefit-card{
-        width: 45%;
+        width: 48%;
+    }
+
+/******************************************
+
+section 5 - about us - ipad
+
+*******************************************/
+
+    .about-us-container{
+        width: 93%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .title-paragraph-container{
+        width: 55%;
+    }
+
+    .figure-linkedin-container{
+        width: 40%;
+    }
+
+    .about-us-figure{
+        width: 90%;
+        padding-bottom: 90%;
+        margin: auto;
+    }
+
+    .quotation{
+        right: -5%;
+        top: -10%;
+        font-size: 4.5rem;
+    }
+
+/******************************************
+
+footer - ipad
+
+*******************************************/
+
+    .footer-container{
+        width: 60%;
     }
 
 }
 
 /******************************************
-desktop query
+
+DESKTOP QUERY
+
 *******************************************/
 
-@media screen and (min-width: 679px) {
+@media screen and (min-width: 769px) {
 
 /******************************************
-section 1 desktop
+
+section 1 - blue cards - desktop
+
 *******************************************/
 
     .nav-container{
@@ -376,7 +595,9 @@ section 1 desktop
     }
 
 /******************************************
-section 2 desktop
+
+section 2 - strategic planning - desktop
+
 *******************************************/
 
     .strategic-planning-section{
@@ -413,8 +634,14 @@ section 2 desktop
     }
 
 /******************************************
-section 3 desktop
+
+section 3 - testimonials - desktop
+
 *******************************************/
+
+    .testimonials-container{
+        width: 80%;
+    }
 
     .img-rounder{
         width: 20%;
@@ -427,13 +654,67 @@ section 3 desktop
     }
 
 /******************************************
-section 4 desktop
+
+section 4 - benefits - desktop
+
 *******************************************/
+
+    .benefits-container{
+        width: 80%;
+    }    
 
     .benefit-card{
         width: calc(90% / 3);
     }
 
+/******************************************
+
+section 5 - about us - desktop
+
+*******************************************/
+
+    .about-us-container{
+        width: 80%;
+    }
+
+    .title-paragraph-container{
+        width: 66%;
+    }
+
+    .figure-linkedin-container{
+        width: 25%;
+    }
+
+    .about-us-figure{
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    .quotation{
+        right: -5%;
+        top: -5%;
+    }
+
+/******************************************
+
+section 6 - get started - desktop
+
+*******************************************/
+
+    .get-started-container{
+        width: 50%;
+    }
+
+
+/******************************************
+
+footer desktop
+
+*******************************************/
+
+    .footer-container{
+        width: 35%;
+    }
 
 }
 
